@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="theme-color" content="#0b1220">
+<meta name="author" content="快播影视">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="快播影视">
+<meta property="og:title" content="快播影视-高清版国产视频大全分享平台|快播影视网站">
+<meta property="og:description" content="2026最新电影在线观看导航，涵盖动作片、喜剧片、科幻大片、爱情电影、战争片及大陆剧、韩剧、日剧、美剧、港剧、短剧等高分剧集，适配手机、平板多端播放。">
+<meta property="og:locale" content="zh_CN">
+<title>快播影视-高清版国产视频大全分享平台|快播影视网站</title>
+<meta name="keywords" content="快播影视，全球不卡顿2026最新影视采集站在线看，海外不卡顿无删减版影视资源在线看入口，高清无广告电影在线播放">
+<meta name="description" content="快播影视：2026最新电影在线观看_全球免费4K高清自然地理纪录片在线看_全球不卡顿无需流量的局域网在线播放。本站汇聚全网最新动作片、喜剧片、科幻大片、爱情电影、战争片等影视导航资源。涵盖海量大陆剧、韩剧、日剧、美剧、港剧、短剧等高分电视剧视频。完美适配安卓智能手机、苹果iPhone、iPad平板电脑等移动设备在线播放。找2026热门电影、高清追剧视频，就快播影视。">
+<style>
+:root {
+  --bg: #0b1220;
+  --bg-soft: #111c2f;
+  --card: #152238;
+  --card-hover: #1b2c48;
+  --line: #24354f;
+  --text: #e8eef8;
+  --text-dim: #9fb0c8;
+  --accent: #ff5f2e;
+  --accent-soft: #ffb199;
+  --blue: #3f8cff;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 18, 32, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #ff9250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.logo-text em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 15px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #fff;
+  background: rgba(255, 95, 46, 0.16);
+}
+
+.hero {
+  position: relative;
+  padding: 72px 0 56px;
+  background:
+    radial-gradient(900px 420px at 82% 0%, rgba(255, 95, 46, 0.20), transparent 70%),
+    radial-gradient(760px 380px at 8% 12%, rgba(63, 140, 255, 0.18), transparent 70%),
+    linear-gradient(180deg, #0d1728, #0b1220);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 95, 46, 0.45);
+  background: rgba(255, 95, 46, 0.10);
+  color: var(--accent-soft);
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 4.6vw, 46px);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.hero h1 span {
+  background: linear-gradient(120deg, #ff7a45, #ffb199);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  max-width: 860px;
+  color: var(--text-dim);
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  flex: 1 1 150px;
+  min-width: 130px;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  background: rgba(21, 34, 56, 0.78);
+  border: 1px solid var(--line);
+}
+
+.stat b {
+  display: block;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.stat span {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #ff8a4c);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(255, 95, 46, 0.30);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  border-color: var(--line);
+  color: var(--text);
+  background: rgba(21, 34, 56, 0.7);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 62px 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.section-head h2 {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.section-head h2::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 4px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), rgba(255, 95, 46, 0.15));
+}
+
+.section-head p {
+  color: var(--text-dim);
+  font-size: 14px;
+  max-width: 560px;
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+  gap: 16px;
+}
+
+.cat-card {
+  position: relative;
+  padding: 22px 20px;
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, var(--card), #101d31);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 95, 46, 0.55);
+  background: linear-gradient(160deg, var(--card-hover), #12203a);
+}
+
+.cat-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.cat-card p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.65;
+}
+
+.cat-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 14px;
+  background: rgba(63, 140, 255, 0.14);
+  color: var(--blue);
+}
+
+.cat-card:nth-child(2n) .cat-icon {
+  background: rgba(255, 95, 46, 0.14);
+  color: var(--accent);
+}
+
+.cat-card:nth-child(3n) .cat-icon {
+  background: rgba(63, 214, 160, 0.14);
+  color: #3fd6a0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #fff;
+  border-color: rgba(255, 95, 46, 0.6);
+}
+
+.filter-btn.is-active {
+  background: linear-gradient(135deg, var(--accent), #ff8a4c);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 600;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+  gap: 18px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 95, 46, 0.5);
+  box-shadow: var(--shadow);
+}
+
+.movie-cover {
+  position: relative;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(135deg, #1d3157, #223a63 55%, #2a2350);
+}
+
+.movie-card:nth-child(3n) .movie-cover {
+  background: linear-gradient(135deg, #43223a, #5a2b33 55%, #6d3722);
+}
+
+.movie-card:nth-child(3n + 1) .movie-cover {
+  background: linear-gradient(135deg, #123a4a, #14505a 55%, #14603f);
+}
+
+.movie-score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.movie-body {
+  padding: 15px 16px 18px;
+}
+
+.movie-body h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.movie-body p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.65;
+}
+
+.movie-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tag {
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--accent-soft);
+  background: rgba(255, 95, 46, 0.12);
+  border: 1px solid rgba(255, 95, 46, 0.22);
+}
+
+.tag-blue {
+  color: #a9c8ff;
+  background: rgba(63, 140, 255, 0.12);
+  border-color: rgba(63, 140, 255, 0.24);
+}
+
+.advantage-section {
+  background: linear-gradient(180deg, #0d1728, #0b1220);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.adv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  gap: 18px;
+}
+
+.adv-card {
+  padding: 26px 22px;
+  border-radius: var(--radius);
+  background: rgba(21, 34, 56, 0.72);
+  border: 1px solid var(--line);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.adv-card:hover {
+  border-color: rgba(63, 140, 255, 0.45);
+  transform: translateY(-3px);
+}
+
+.adv-card h3 {
+  font-size: 17px;
+  margin: 14px 0 8px;
+}
+
+.adv-card p {
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.adv-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #ff9250);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  padding: 26px 22px 24px;
+  border-radius: var(--radius);
+  border: 1px dashed var(--line);
+  background: rgba(17, 28, 47, 0.7);
+}
+
+.step::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  color: rgba(255, 95, 46, 0.45);
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.step p {
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 900px;
+}
+
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--accent-soft);
+  border: 1px solid rgba(255, 95, 46, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+
+.faq-item p {
+  padding: 0 20px 18px;
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+
+.notice {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--accent);
+  background: rgba(255, 95, 46, 0.08);
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.notice strong {
+  color: var(--text);
+}
+
+.site-footer {
+  padding: 44px 0 32px;
+  border-top: 1px solid var(--line);
+  background: #080e19;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.footer-col h4 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.footer-links a:hover {
+  color: var(--accent-soft);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #7d8ea6;
+}
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: rgba(21, 34, 56, 0.92);
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 40;
+}
+
+.to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.to-top:hover {
+  border-color: var(--accent);
+  color: var(--accent-soft);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 0 40px;
+  }
+
+  section {
+    padding: 44px 0;
+  }
+
+  .header-inner {
+    height: 58px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .logo-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 14px;
+  }
+
+  .nav a {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .movie-cover {
+    height: 92px;
+    font-size: 22px;
+  }
+
+  .movie-body {
+    padding: 12px 12px 14px;
+  }
+
+  .movie-body h3 {
+    font-size: 15px;
+  }
+
+  .movie-body p {
+    font-size: 12px;
+  }
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo">
+      <span class="logo-mark">快</span>
+      <span class="logo-text">快播影视<em>·</em>高清影库</span>
+    </div>
+    <nav class="nav" aria-label="主导航">
+      <a href="#intro" class="active">平台首页</a>
+      <a href="#category">分类导航</a>
+      <a href="#hot">热门推荐</a>
+      <a href="#advantage">平台优势</a>
+      <a href="#guide">观看指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="intro">
+    <div class="wrap">
+      <span class="hero-badge">2026 影视资源导航 · 多端高清播放</span>
+      <h1>快播影视：<span>高清版国产视频</span>大全分享平台</h1>
+      <p>快播影视是面向中文用户的影视内容导航与分享平台，围绕「找片快、分类清、播放稳」三个核心体验构建栏目体系。站内以影视导航形式聚合电影、电视剧、纪录片、动漫、综艺与短剧等热门内容条目，按类型、地区、年份与口碑维度做结构化整理，帮助用户在最短时间内定位想看的影片。页面针对安卓智能手机、苹果 iPhone、iPad 平板电脑等移动设备做了完整的响应式适配，无论在家庭宽带还是移动网络环境下都能顺畅浏览。</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <b>6 大</b>
+          <span>内容主频道</span>
+        </div>
+        <div class="stat">
+          <b>20+</b>
+          <span>细分类型标签</span>
+        </div>
+        <div class="stat">
+          <b>4 端</b>
+          <span>手机平板全适配</span>
+        </div>
+        <div class="stat">
+          <b>每日</b>
+          <span>内容条目更新</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#hot">查看热门推荐</a>
+        <a class="btn btn-ghost" href="#category">浏览全部分类</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="category">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>频道分类导航</h2>
+          <p>按内容形态分为六大主频道，每个频道下再按类型、地区与年份细分，方便按需检索。</p>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="cat-icon">影</div>
+          <h3>电影频道</h3>
+          <p>涵盖动作片、喜剧片、科幻大片、爱情电影、战争片、悬疑犯罪等主流类型，按院线与网络发行年份归档。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">剧</div>
+          <h3>电视剧频道</h3>
+          <p>聚合大陆剧、韩剧、日剧、美剧、港剧等高分剧集，支持按更新状态、集数与口碑评分快速筛选。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">纪</div>
+          <h3>纪录片频道</h3>
+          <p>自然地理、历史人文、科技探索与社会观察类纪录片合集，适合长时间沉浸式观看与知识扩展。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">漫</div>
+          <h3>动漫频道</h3>
+          <p>国产动画、日系新番、剧场版与合家欢动画分类整理，标注播出季度与更新进度。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">综</div>
+          <h3>综艺频道</h3>
+          <p>真人秀、音乐竞技、脱口秀、生活纪实类综艺节目，按期数与嘉宾阵容做条目化归类。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">短</div>
+          <h3>短剧频道</h3>
+          <p>单集时长较短的竖屏与横屏短剧资源，题材覆盖都市情感、悬疑逆袭、古装传奇等方向。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="hot">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>热门推荐榜单</h2>
+          <p>依据站内浏览热度与用户收藏数据整理，点击上方分类按钮可快速筛选想看的内容方向。</p>
+        </div>
+      </div>
+      <div class="filters" role="group" aria-label="内容类型筛选">
+        <button class="filter-btn is-active" type="button" data-filter="all">全部推荐</button>
+        <button class="filter-btn" type="button" data-filter="movie">电影</button>
+        <button class="filter-btn" type="button" data-filter="tv">电视剧</button>
+        <button class="filter-btn" type="button" data-filter="doc">纪录片</button>
+        <button class="filter-btn" type="button" data-filter="anime">动漫</button>
+        <button class="filter-btn" type="button" data-filter="short">短剧</button>
+      </div>
+      <div class="movie-grid" id="movieGrid">
+        <article class="movie-card" data-type="movie">
+          <div class="movie-cover">动作<span class="movie-score">8.7</span></div>
+          <div class="movie-body">
+            <h3>疾速追击</h3>
+            <p>硬核动作类型代表作，追逐戏与近身格斗节奏紧凑，适合追求视听冲击的观众。</p>
+            <div class="movie-meta">
+              <span class="tag">动作片</span>
+              <span class="tag tag-blue">2026</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="movie">
+          <div class="movie-cover">科幻<span class="movie-score">9.0</span></div>
+          <div class="movie-body">
+            <h3>星际边界</h3>
+            <p>太空探索题材科幻大片，围绕星际航行与人类文明延续展开叙事，视效层次丰富。</p>
+            <div class="movie-meta">
+              <span class="tag">科幻大片</span>
+              <span class="tag tag-blue">4K 高清</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="movie">
+          <div class="movie-cover">喜剧<span class="movie-score">8.2</span></div>
+          <div class="movie-body">
+            <h3>周末闹剧</h3>
+            <p>都市轻喜剧，用夸张的情境冲突讲普通人的日常烦恼，适合家庭一起观看。</p>
+            <div class="movie-meta">
+              <span class="tag">喜剧片</span>
+              <span class="tag tag-blue">2025</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="movie">
+          <div class="movie-cover">战争<span class="movie-score">8.5</span></div>
+          <div class="movie-body">
+            <h3>长夜烽火</h3>
+            <p>战争题材作品，聚焦小人物在时代洪流中的抉择，叙事沉稳、群像刻画细腻。</p>
+            <div class="movie-meta">
+              <span class="tag">战争片</span>
+              <span class="tag tag-blue">历史</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="tv">
+          <div class="movie-cover">大陆<span class="movie-score">8.9</span></div>
+          <div class="movie-body">
+            <h3>长街旧事</h3>
+            <p>年代剧集，以一条老街的变迁串联三代人生活，口碑与讨论度双双走高。</p>
+            <div class="movie-meta">
+              <span class="tag">大陆剧</span>
+              <span class="tag tag-blue">全 40 集</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="tv">
+          <div class="movie-cover">韩剧<span class="movie-score">8.6</span></div>
+          <div class="movie-body">
+            <h3>春日合约</h3>
+            <p>都市情感题材韩剧，节奏轻快、台词细腻，适合追更型观众连续观看。</p>
+            <div class="movie-meta">
+              <span class="tag">韩剧</span>
+              <span class="tag tag-blue">更新中</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="tv">
+          <div class="movie-cover">美剧<span class="movie-score">8.8</span></div>
+          <div class="movie-body">
+            <h3>深蓝档案</h3>
+            <p>悬疑推理类美剧，单元案件与主线谜题交织，信息密度高、反转设计巧妙。</p>
+            <div class="movie-meta">
+              <span class="tag">美剧</span>
+              <span class="tag tag-blue">第 2 季</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="tv">
+          <div class="movie-cover">港剧<span class="movie-score">8.3</span></div>
+          <div class="movie-body">
+            <h3>港岛重案</h3>
+            <p>港式警匪剧，职业群像与案件侦破并重，节奏干练，方言原声版本同步收录。</p>
+            <div class="movie-meta">
+              <span class="tag">港剧</span>
+              <span class="tag tag-blue">全 30 集</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="doc">
+          <div class="movie-cover">自然<span class="movie-score">9.3</span></div>
+          <div class="movie-body">
+            <h3>蓝色星球脉动</h3>
+            <p>自然地理纪录片，以超高清画质记录海洋生态与极地环境，画面与配乐俱佳。</p>
+            <div class="movie-meta">
+              <span class="tag">自然地理</span>
+              <span class="tag tag-blue">4K 高清</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="doc">
+          <div class="movie-cover">人文<span class="movie-score">9.1</span></div>
+          <div class="movie-body">
+            <h3>古城手艺人</h3>
+            <p>人文历史纪录片，走访传统手工艺人，记录技艺传承与生活变迁的真实样貌。</p>
+            <div class="movie-meta">
+              <span class="tag">人文历史</span>
+              <span class="tag tag-blue">全 8 集</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="anime">
+          <div class="movie-cover">国漫<span class="movie-score">8.8</span></div>
+          <div class="movie-body">
+            <h3>山河剑歌</h3>
+            <p>国产动画剧集，东方美学风格鲜明，打斗分镜流畅，适合喜欢武侠题材的观众。</p>
+            <div class="movie-meta">
+              <span class="tag">国产动画</span>
+              <span class="tag tag-blue">季度更新</span>
+            </div>
+          </div>
+        </article>
+        <article class="movie-card" data-type="short">
+          <div class="movie-cover">短剧<span class="movie-score">8.4</span></div>
+          <div class="movie-body">
+            <h3>逆风翻盘</h3>
+            <p>都市逆袭题材短剧，单集时长紧凑，剧情推进快，适合碎片时间观看。</p>
+            <div class="movie-meta">
+              <span class="tag">短剧</span>
+              <span class="tag tag-blue">全 60 集</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantage-section" id="advantage">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>平台核心优势</h2>
+          <p>从检索效率、页面加载到多端适配，围绕实际观看前的决策链路做针对性优化。</p>
+        </div>
+      </div>
+      <div class="adv-grid">
+        <article class="adv-card">
+          <span class="adv-num">01</span>
+          <h3>分类体系清晰</h3>
+          <p>六大主频道叠加二十余个细分标签，电影按类型与年份、剧集按地区与集数归档，减少反复翻找的时间成本。</p>
+        </article>
+        <article class="adv-card">
+          <span class="adv-num">02</span>
+          <h3>高清画质优先</h3>
+          <p>条目优先标注高清与 4K 资源标识，纪录片与自然地理类内容特别提示画质信息，便于按设备能力选择。</p>
+        </article>
+        <article class="adv-card">
+          <span class="adv-num">03</span>
+          <h3>加载速度轻量</h3>
+          <p>页面结构精简、资源体积可控，在移动网络环境下同样能快速打开，减少等待与流量消耗。</p>
+        </article>
+        <article class="adv-card">
+          <span class="adv-num">04</span>
+          <h3>多端响应式适配</h3>
+          <p>针对安卓智能手机、苹果 iPhone、iPad 平板电脑与桌面浏览器分别优化栅格与字号，触控区域适配手指操作。</p>
+        </article>
+        <article class="adv-card">
+          <span class="adv-num">05</span>
+          <h3>口碑评分参考</h3>
+          <p>热门条目附带评分与类型标签，帮助在同类题材中快速比较，降低选片时的不确定性。</p>
+        </article>
+        <article class="adv-card">
+          <span class="adv-num">06</span>
+          <h3>内容持续更新</h3>
+          <p>剧集频道标注更新状态与季数信息，短剧与综艺按集数追踪，便于观众掌握追更节奏。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>三步使用指南</h2>
+          <p>无需注册登录即可浏览全部导航条目，按频道、标签与榜单三种方式快速定位内容。</p>
+        </div>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <h3>选择频道</h3>
+          <p>从电影、电视剧、纪录片、动漫、综艺、短剧六大频道中选择方向，或在顶部导航直接跳转对应板块。</p>
+        </article>
+        <article class="step">
+          <h3>筛选标签</h3>
+          <p>使用类型、地区、年份等标签组合筛选，也可通过热门推荐区的分类按钮查看高分条目。</p>
+        </article>
+        <article class="step">
+          <h3>查看条目</h3>
+          <p>打开条目查看简介、评分与类型标签，结合设备与网络状况选择合适清晰度的资源播放。</p>
+        </article>
+      </div>
+      <div class="notice">
+        <strong>内容说明：</strong>本站为影视资讯与导航性质页面，仅提供内容条目介绍与分类索引，不存储、不制作、不传播任何影视文件；具体内容版权归原权利人所有，请通过正规授权渠道观看。若相关权利人认为页面信息存在不当之处，可联系站点处理。
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>常见问题解答</h2>
+          <p>汇总用户在使用影视导航站点时最常遇到的疑问，便于快速自查与解决。</p>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>快播影视提供哪些类型的内容导航？</summary>
+          <p>站内导航覆盖电影、电视剧、纪录片、动漫、综艺与短剧六大频道。电影频道包含动作片、喜剧片、科幻大片、爱情电影、战争片、悬疑犯罪等类型；电视剧频道聚合大陆剧、韩剧、日剧、美剧、港剧等剧集；纪录片频道侧重自然地理与人文历史；动漫频道区分为国产动画与海外新番；另有综艺与短剧两个独立频道。</p>
+        </details>
+        <details class="faq-item">
+          <summary>在手机上浏览是否会影响使用体验？</summary>
+          <p>不会。页面采用响应式布局，针对安卓智能手机、苹果 iPhone 与 iPad 平板电脑分别调整了栅格列数、卡片尺寸与字号，触控按钮的可点击区域也按手指操作习惯做了放大，横竖屏切换时布局会自动重排。</p>
+        </details>
+        <details class="faq-item">
+          <summary>如何快速找到想看的某一类影片？</summary>
+          <p>有三种方式：一是通过顶部导航跳到对应频道；二是在频道内使用类型、地区与年份标签组合筛选；三是直接查看热门推荐榜单，榜单按内容类型提供了快捷筛选按钮，可按电影、电视剧、纪录片、动漫、短剧分别查看。</p>
+        </details>
+        <details class="faq-item">
+          <summary>纪录片频道有什么特色？</summary>
+          <p>纪录片频道以自然地理、人文历史、科技探索与社会观察为主要方向，条目会标注是否提供 4K 高清资源，方便在大屏设备上获得更好的观看效果，适合长时间连续观看。</p>
+        </details>
+        <details class="faq-item">
+          <summary>剧集更新进度从哪里查看？</summary>
+          <p>剧集与短剧条目均带有状态标签，例如「更新中」「全 40 集」「第 2 季」等，标签位于条目标题下方的元信息区域，可与评分标签一起快速判断是否值得追更。</p>
+        </details>
+        <details class="faq-item">
+          <summary>页面加载较慢时应如何处理？</summary>
+          <p>首先确认网络连接状态，移动网络环境下建议在信号稳定处浏览；其次可清理浏览器缓存后重新打开页面。页面本身仅包含内联样式与少量脚本，不存在大量外部依赖，正常情况下打开速度较快。</p>
+        </details>
+        <details class="faq-item">
+          <summary>站内内容是否需要注册或付费？</summary>
+          <p>浏览导航条目、查看简介与分类信息无需注册登录。本站为影视资讯与导航页面，不提供影视文件的存储与分发服务，具体观看渠道与授权情况请以内容权利方公布的官方途径为准。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>关于快播影视</h4>
+        <p>快播影视是面向中文用户的影视内容导航与分享平台，以结构化分类、清晰标签与轻量页面为核心，帮助用户在手机、平板与电脑上高效找到想看的影片与剧集。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容频道</h4>
+        <div class="footer-links">
+          <a href="#category">电影频道</a>
+          <a href="#category">电视剧频道</a>
+          <a href="#category">纪录片频道</a>
+          <a href="#category">动漫与综艺</a>
+          <a href="#category">短剧专区</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>使用帮助</h4>
+        <div class="footer-links">
+          <a href="#guide">三步使用指南</a>
+          <a href="#advantage">平台核心优势</a>
+          <a href="#faq">常见问题解答</a>
+          <a href="#hot">热门推荐榜单</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>快播影视 · 高清版国产视频大全分享平台</span>
+      <span>本站为影视资讯导航页面，不存储任何影视文件，版权归原权利人所有</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="返回顶部">↑</button>
+
+<script>
+(function () {
+  var filterButtons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('#movieGrid .movie-card');
+
+  filterButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      filterButtons.forEach(function (item) {
+        item.classList.remove('is-active');
+      });
+      button.classList.add('is-active');
+      var type = button.getAttribute('data-filter');
+      cards.forEach(function (card) {
+        var match = type === 'all' || card.getAttribute('data-type') === type;
+        card.style.display = match ? 'flex' : 'none';
+      });
+    });
+  });
+
+  var navLinks = document.querySelectorAll('.nav a');
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.forEach(function (item) {
+        item.classList.remove('active');
+      });
+      link.classList.add('active');
+    });
+  });
+
+  var toTop = document.getElementById('toTop');
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 420) {
+      toTop.classList.add('show');
+    } else {
+      toTop.classList.remove('show');
+    }
+  }, { passive: true });
+
+  toTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  var sections = document.querySelectorAll('section[id]');
+  var ticking = false;
+
+  function syncNav() {
+    var offset = window.pageYOffset + 120;
+    var currentId = 'intro';
+    sections.forEach(function (section) {
+      if (section.offsetTop <= offset) {
+        currentId = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(function (link) {
+      var target = link.getAttribute('href').replace('#', '');
+      if (target === currentId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(syncNav);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  syncNav();
+})();
+</script>
+
+</body>
+</html>
